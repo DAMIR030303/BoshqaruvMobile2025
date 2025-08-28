@@ -1,5 +1,11 @@
-// Boshqaruv - Responsive Input Komponenti
-// Web va mobil uchun moslashtirilgan input field
+/**
+ * Boshqaruv - Responsive Input Komponenti
+ * Web va mobil uchun moslashtirilgan input field
+ * 
+ * @author Damir Nurmurodov
+ * @version 1.0.0
+ * @created 2025
+ */
 
 import React, { useState } from 'react';
 import { 

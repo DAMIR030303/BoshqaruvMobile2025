@@ -1,5 +1,11 @@
-// Boshqaruv - Responsive Card Komponenti
-// Web va mobil uchun moslashtirilgan card
+/**
+ * Boshqaruv - Responsive Card Komponenti
+ * Web va mobil uchun moslashtirilgan card
+ * 
+ * @author Damir Nurmurodov
+ * @version 1.0.0
+ * @created 2025
+ */
 
 import React from 'react';
 import { 

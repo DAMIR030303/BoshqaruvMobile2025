@@ -1,3 +1,11 @@
+/**
+ * BoshqaruvMobile - Ilova kirish nuqtasi
+ * 
+ * @author Damir Nurmurodov
+ * @version 1.0.0
+ * @created 2025
+ */
+
 import { registerRootComponent } from 'expo';
 
 import App from './App';

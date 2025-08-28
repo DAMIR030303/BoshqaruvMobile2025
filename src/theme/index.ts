@@ -1,5 +1,11 @@
-// Boshqaruv - Theme Tizimi
-// Barcha theme komponentlarini eksport qilish
+/**
+ * Boshqaruv - Theme Tizimi
+ * Barcha theme komponentlarini eksport qilish
+ * 
+ * @author Damir Nurmurodov
+ * @version 1.0.0
+ * @created 2025
+ */
 
 export * from './colors';
 export * from './typography';

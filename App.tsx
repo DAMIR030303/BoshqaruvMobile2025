@@ -1,3 +1,11 @@
+/**
+ * BoshqaruvMobile - Asosiy ilova fayli
+ * 
+ * @author Damir Nurmurodov
+ * @version 1.0.0
+ * @created 2025
+ */
+
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import React from 'react'

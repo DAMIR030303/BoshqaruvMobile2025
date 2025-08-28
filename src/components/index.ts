@@ -1,5 +1,11 @@
-// Boshqaruv - Components Export Index
-// Barcha komponentlarni markaziy joydan export qilish
+/**
+ * Boshqaruv - Components Export Index
+ * Barcha komponentlarni markaziy joydan export qilish
+ * 
+ * @author Damir Nurmurodov
+ * @version 1.0.0
+ * @created 2025
+ */
 
 export { ResponsiveContainer } from './ResponsiveContainer';
 export { ResponsiveGrid, GridItem } from './ResponsiveGrid';

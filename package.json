@@ -1,6 +1,8 @@
 {
   "name": "boshqaruvmobile",
   "version": "1.0.0",
+  "description": "Boshqaruv tizimi uchun zamonaviy mobil ilova",
+  "author": "Damir Nurmurodov",
   "main": "index.ts",
   "scripts": {
     "start": "expo start",

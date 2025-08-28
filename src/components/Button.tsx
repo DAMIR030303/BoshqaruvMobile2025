@@ -1,5 +1,11 @@
-// Boshqaruv - Responsive Button Komponenti
-// Web va mobil uchun moslashtirilgan button
+/**
+ * Boshqaruv - Responsive Button Komponenti
+ * Web va mobil uchun moslashtirilgan button
+ * 
+ * @author Damir Nurmurodov
+ * @version 1.0.0
+ * @created 2025
+ */
 
 import React from 'react';
 import { 
