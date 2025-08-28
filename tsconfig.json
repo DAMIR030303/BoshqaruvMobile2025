@@ -10,18 +10,7 @@
     "module": "esnext",
     "noEmit": true,
     "skipLibCheck": true,
-    "resolveJsonModule": true,
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"],
-      "@components/*": ["src/components/*"],
-      "@screens/*": ["src/screens/*"],
-      "@navigation/*": ["src/navigation/*"],
-      "@services/*": ["src/services/*"],
-      "@store/*": ["src/store/*"],
-      "@utils/*": ["src/utils/*"],
-      "@assets/*": ["assets/*"]
-    }
+    "resolveJsonModule": true
   },
   "include": [
     "**/*.ts",
