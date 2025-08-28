@@ -137,6 +137,9 @@ const SuperAdminDashboard = ({ navigation }: any) => {
                 Tizim boshqaruvi va monitoring
               </Text>
             </View>
+            <TouchableOpacity style={styles.logoutButton} onPress={handleLogout}>
+              <Text style={styles.logoutButtonText}>Chiqish</Text>
+            </TouchableOpacity>
           </View>
         </View>
 
@@ -304,7 +307,7 @@ const styles = StyleSheet.create({
   },
   headerContent: {
     flexDirection: 'row',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     alignItems: 'center',
   },
   headerText: {
@@ -326,6 +329,17 @@ const styles = StyleSheet.create({
     fontSize: typography.fontSize.sm,
     color: colors.background,
     opacity: 0.8,
+  },
+  logoutButton: {
+    backgroundColor: colors.error,
+    paddingVertical: spacing.sm,
+    paddingHorizontal: spacing.md,
+    borderRadius: borderRadius.md,
+  },
+  logoutButtonText: {
+    color: colors.background,
+    fontSize: typography.fontSize.base,
+    fontWeight: typography.fontWeight.medium,
   },
   statsSection: {
     padding: spacing.lg,

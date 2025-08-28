@@ -155,7 +155,7 @@ const DashboardScreen = () => {
     </Card>
   );
 
-  const ActivityItem = ({ type, title, description, time, icon }: any) => (
+  const ActivityItem = ({ type: _type, title, description, time, icon }: any) => (
     <View style={styles.activityItem}>
       <View style={styles.activityIcon}>
         <Text style={styles.activityIconText}>{icon}</Text>
