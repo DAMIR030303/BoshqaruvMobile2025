@@ -1,269 +1,369 @@
-# 🚀 BoshqaruvMobile 2025
+# 🚀 BoshqaruvMobile - Zamonaviy Mobil Boshqaruv Tizimi
 
-**Boshqaruv tizimi uchun zamonaviy mobil ilova**
+**Muallif:** Damir Nurmurodov  
+**Versiya:** 1.0.0  
+**Yaratilgan:** 2025
 
-[![React Native](https://img.shields.io/badge/React%20Native-0.74.5-blue.svg)](https://reactnative.dev/)
-[![Expo](https://img.shields.io/badge/Expo-51.0.39-green.svg)](https://expo.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.8.3-blue.svg)](https://www.typescriptlang.org/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+## 📱 Mobil Ilova Ishlatish
 
-## 📱 Loyiha haqida
+### 📋 Talablar
+- **Node.js:** 18+ versiya
+- **npm/yarn/pnpm:** Paket menejeri
+- **Expo CLI:** `npm install -g @expo/cli`
+- **Android Studio** (Android uchun)
+- **Xcode** (iOS uchun, faqat macOS da)
 
-**BoshqaruvMobile** - bu boshqaruv tizimlari uchun ishlab chiqilgan zamonaviy mobil ilova. Ilova React Native va Expo texnologiyalari asosida yaratilgan bo'lib, iOS, Android va Web platformalarida ishlaydi.
+### 🚀 Tezkor Boshlash
 
-### ✨ Asosiy xususiyatlar
-
-- 📱 **Cross-platform** - iOS, Android va Web da ishlaydi
-- 🎨 **Zamonaviy UI/UX** - Material Design va React Native Paper
-- 🔄 **State Management** - Redux Toolkit bilan
-- 🌐 **API Integration** - Axios va React Query
-- 📊 **Form Management** - React Hook Form va Zod validation
-- 🎯 **TypeScript** - To'liq type safety
-- 🧪 **Testing** - Jest va React Native Testing Library
-- 📱 **Navigation** - React Navigation v7
-- 🎨 **Theming** - Dynamic theme tizimi
-- 🌍 **Internationalization** - i18n qo'llab-quvvatlash
-
-## 🛠 Texnik talablar
-
-### Tizim talablari
-- **Node.js**: 20.x yoki undan yuqori
-- **npm**: 8.0.0 yoki undan yuqori
-- **Expo CLI**: Eng so'nggi versiya
-- **Git**: 2.0 yoki undan yuqori
-
-### Platforma qo'llab-quvvatlash
-- **iOS**: 13.0+
-- **Android**: API level 21+ (Android 5.0+)
-- **Web**: Modern browsers (Chrome, Firefox, Safari, Edge)
-
-## 🚀 O'rnatish va ishga tushirish
-
-### 1. Loyihani klonlash
+#### 1. Loyihani yuklab olish
 ```bash
 git clone https://github.com/DAMIR030303/BoshqaruvMobile2025.git
 cd BoshqaruvMobile2025
 ```
 
-### 2. Bog'liqliklarni o'rnatish
+#### 2. Bog'liqliklarni o'rnatish
 ```bash
-# pnpm bilan (tavsiya etiladi)
-pnpm install
-
-# yoki npm bilan
 npm install
+# yoki
+yarn install
+# yoki
+pnpm install
 ```
 
-### 3. Dasturni ishga tushirish
-
-#### Expo Development Server
+#### 3. Ilovani ishga tushirish
 ```bash
-npx expo start
-```
-
-#### Platforma bo'yicha ishga tushirish
-```bash
-# Web uchun
-npx expo start --web
+# Barcha platformalar uchun
+npm start
 
 # Android uchun
-npx expo start --android
+npm run android
 
 # iOS uchun
-npx expo start --ios
+npm run ios
+
+# Web uchun
+npm run web
 ```
 
-#### Expo Go bilan sinab ko'rish
-1. Telefoningizga [Expo Go](https://expo.dev/client) ilovasini yuklang
-2. QR kodni skanerlang
-3. Ilovangiz telefonda ochiladi
+### 📱 Telefonda Ishlatish
 
-## 📁 Loyiha tuzilmasi
+#### **Android da:**
+1. **Expo Go** ilovasini Google Play dan yuklab oling
+2. Terminal da `npm run android` buyrug'ini ishga tushiring
+3. QR kodni Expo Go ilovasi bilan skanerlang
+4. Ilova telefonda ochiladi
 
-```
-BoshqaruvMobile/
-├── src/                    # Asosiy kod papkasi
-│   ├── app/               # Expo Router app papkasi
-│   ├── components/        # Qayta ishlatiluvchi komponentlar
-│   ├── screens/           # Ilova ekranlari
-│   ├── navigation/        # Navigatsiya konfiguratsiyasi
-│   ├── store/             # Redux store va slice'lar
-│   ├── services/          # API xizmatlari
-│   ├── hooks/             # Custom React hooks
-│   ├── utils/             # Yordamchi funksiyalar
-│   ├── types/             # TypeScript type'lar
-│   ├── styles/            # Global stillar
-│   └── theme/             # Tema konfiguratsiyasi
-├── assets/                 # Rasmlar, fontlar va boshqa resurslar
-├── __tests__/             # Test fayllari
-├── app.json               # Expo konfiguratsiyasi
-├── package.json           # Loyiha bog'liqliklari
-├── tsconfig.json          # TypeScript konfiguratsiyasi
-├── metro.config.js        # Metro bundler konfiguratsiyasi
-├── babel.config.js        # Babel konfiguratsiyasi
-└── .gitignore             # Git ignore qoidalari
-```
+#### **iOS da:**
+1. **Expo Go** ilovasini App Store dan yuklab oling
+2. Terminal da `npm run ios` buyrug'ini ishga tushiring
+3. QR kodni Expo Go ilovasi bilan skanerlang
+4. Ilova telefonda ochiladi
 
-## 🎯 Asosiy komponentlar
+### 🏗️ Ilovani Yaratish (Build)
 
-### 📱 Ekranlar (Screens)
-- **Home Screen** - Asosiy sahifa
-- **Profile Screen** - Foydalanuvchi profili
-- **Settings Screen** - Sozlamalar
-- **Dashboard Screen** - Boshqaruv paneli
-
-### 🔧 Komponentlar (Components)
-- **Button** - Responsive tugma komponenti
-- **Input** - Form input komponenti
-- **Card** - Ma'lumot ko'rsatish karti
-- **Modal** - Modal oynalar
-- **Loading** - Yuklash indikatori
-
-### 🧭 Navigatsiya
-- **Bottom Tabs** - Pastki navigatsiya
-- **Stack Navigation** - Ekranlar orasida o'tish
-- **Drawer Navigation** - Yon panel navigatsiya
-
-## 🎨 UI/UX xususiyatlari
-
-### Tema tizimi
-- **Light Theme** - Yengil tema
-- **Dark Theme** - Qorong'i tema
-- **Dynamic Switching** - Avtomatik tema almashish
-- **Custom Colors** - O'zlashtirilgan ranglar
-
-### Responsive Design
-- **Mobile First** - Mobil qurilmalar uchun optimallashtirilgan
-- **Adaptive Layout** - Turli ekran o'lchamlariga moslashish
-- **Touch Friendly** - Touch qurilmalar uchun optimallashtirilgan
-
-## 🔌 API va ma'lumotlar
-
-### Backend integratsiyasi
-- **REST API** - Axios orqali
-- **Real-time Updates** - WebSocket qo'llab-quvvatlash
-- **Offline Support** - AsyncStorage bilan
-- **Error Handling** - Xatoliklarni qayta ishlash
-
-### Ma'lumotlar tuzilmasi
-- **Redux Store** - Global state management
-- **Local Storage** - AsyncStorage
-- **Cache Management** - React Query bilan
-
-## 🧪 Testing
-
-### Test turlari
-- **Unit Tests** - Komponentlar uchun
-- **Integration Tests** - API integratsiyasi uchun
-- **E2E Tests** - End-to-end testlar
-
-### Test ishga tushirish
+#### **Preview Build (APK):**
 ```bash
-# Barcha testlarni ishga tushirish
-npm test
-
-# Testlarni kuzatib borish
-npm run test:watch
-
-# Coverage hisobotini ko'rish
-npm run test:coverage
+npm run build:preview
 ```
 
-## 📦 Build va Deployment
-
-### Web uchun
+#### **Production Build:**
 ```bash
-npm run build:web
+npm run build:production
 ```
 
-### Android uchun
+#### **Platformaga qarab:**
 ```bash
+# Android uchun
 npm run build:android
-```
 
-### iOS uchun
-```bash
+# iOS uchun
 npm run build:ios
 ```
 
-## 🔧 Development
+### 📱 Ilovani Telefonga O'rnatish
 
-### Kod yozish qoidalari
-- **ESLint** - Kod sifatini nazorat qilish
-- **Prettier** - Kod formatlash
-- **TypeScript** - Type checking
-- **Git Hooks** - Pre-commit tekshiruvlar
-
-### Development buyruqlari
+#### **Development Build:**
 ```bash
-# Kod formatlash
-npm run format
+# Android
+npx expo run:android
+
+# iOS
+npx expo run:ios
+```
+
+#### **Production APK:**
+1. `npm run build:preview` buyrug'ini ishga tushiring
+2. EAS Build tomonidan yaratilgan APK faylini yuklab oling
+3. APK faylini telefonga o'rnating
+
+### 🔧 Qo'shimcha Sozlamalar
+
+#### **Environment Variables:**
+`.env` faylini yarating:
+```env
+API_URL=https://api.boshqaruv.uz
+EXPO_PUBLIC_APP_ENV=development
+```
+
+#### **Metro Cache ni tozalash:**
+```bash
+npm run clean
+```
+
+#### **Expo Doctor:**
+```bash
+npm run doctor
+```
+
+### 📱 Mobil Ilova Xususiyatlari
+
+#### **Platforma qo'llab-quvvatlash:**
+- ✅ Android (API 21+)
+- ✅ iOS (12.0+)
+- ✅ Web (Chrome, Firefox, Safari)
+
+#### **Qurilma ruxsatlari:**
+- 📷 Kamera
+- 🖼️ Rasmlar galereyasi
+- 📍 Joylashuv
+- 🔔 Bildirishnomalar
+- 🌐 Internet
+
+#### **Responsive Design:**
+- 📱 Telefon (portrait/landscape)
+- 📱 Tablet (portrait/landscape)
+- 💻 Web (responsive)
+
+### 🐛 Xato Tuzatish
+
+#### **Umumiy muammolar:**
+
+**1. Metro bundler xatosi:**
+```bash
+npm run clean
+npm start
+```
+
+**2. Android build xatosi:**
+```bash
+cd android
+./gradlew clean
+cd ..
+npm run android
+```
+
+**3. iOS build xatosi:**
+```bash
+cd ios
+pod install
+cd ..
+npm run ios
+```
+
+**4. Dependencies xatosi:**
+```bash
+rm -rf node_modules
+rm package-lock.json
+npm install
+```
+
+### 📱 Log Tizimi
+
+Ilovada to'liq xato log tizimi mavjud:
+
+#### **Log turlari:**
+- 🚨 **ERROR** - Xatolar
+- ⚠️ **WARNING** - Ogohlantirishlar
+- ℹ️ **INFO** - Ma'lumotlar
+- 🐛 **DEBUG** - Debug ma'lumotlari
+- ⚡ **PERFORMANCE** - Performance metrikalari
+
+#### **Loglarni ko'rish:**
+```bash
+# Log fayllarini ko'rish
+ls logs/
+
+# Xato loglarini ko'rish
+cat logs/errors/errors_2025-01-28.json
+```
+
+### 🚀 Deployment
+
+#### **EAS Build orqali:**
+```bash
+# EAS ga kirish
+npx eas login
+
+# Build yaratish
+npx eas build --platform android
+npx eas build --platform ios
+```
+
+#### **App Store/Google Play ga yuklash:**
+```bash
+# Android
+npm run submit:android
+
+# iOS
+npm run submit:ios
+```
+
+### 📱 Ilova Screenshotlari
+
+![Dashboard](assets/screenshots/dashboard.png)
+![Login](assets/screenshots/login.png)
+![Profile](assets/screenshots/profile.png)
+
+### 🔗 Foydali Havolalar
+
+- [Expo Documentation](https://docs.expo.dev/)
+- [React Native Documentation](https://reactnative.dev/)
+- [EAS Build](https://docs.expo.dev/build/introduction/)
+- [Expo Go App](https://expo.dev/client)
+
+### 📞 Yordam
+
+Agar muammo yuzaga kelsa:
+1. **Issues** bo'limida xabar bering
+2. **Discussions** da savol bering
+3. **Telegram:** @damirnurmurodov
+
+---
+
+## 🎯 Asosiy Xususiyatlar
+
+### 🏗️ **Arxitektura**
+- **React Native + Expo** - Zamonaviy mobil ilova framework
+- **TypeScript** - Type safety va kod sifatini ta'minlash
+- **Redux Toolkit** - Markaziy state management
+- **React Query** - Server state management
+- **React Navigation** - Navigation tizimi
+
+### 🎨 **UI/UX**
+- **Material Design** - Google design system
+- **React Native Paper** - Material Design komponentlari
+- **Responsive Design** - Barcha qurilmalarga moslashish
+- **Dark/Light Theme** - Foydalanuvchi tanlovi
+- **Custom Components** - Maxsus komponentlar
+
+### 🔧 **Texnik Xususiyatlar**
+- **Performance Monitoring** - Ilova ishlashini kuzatish
+- **Error Boundary** - Xatolarni ushlash va ko'rsatish
+- **Logging System** - To'liq xato log tizimi
+- **Offline Support** - Internet yo'qligida ishlash
+- **Push Notifications** - Bildirishnomalar
+
+### 📊 **Monitoring va Analytics**
+- **Error Tracking** - Xatolarni kuzatish
+- **Performance Metrics** - Ishlash ko'rsatkichlari
+- **User Analytics** - Foydalanuvchi statistikasi
+- **Crash Reporting** - Xato hisobotlari
+
+---
+
+## 🚀 Rivojlantirish
+
+### 📋 **Talablar**
+- Node.js 18+
+- npm/yarn/pnpm
+- Git
+- VS Code (tavsiya etiladi)
+
+### 🔧 **Development Scripts**
+```bash
+# Type checking
+npm run typecheck
 
 # Linting
 npm run lint
 
-# Type checking
-npm run typecheck
+# Testing
+npm run test
 
-# Development server
-npm run dev
+# Formatting
+npm run format
+
+# Clean cache
+npm run clean
 ```
 
-## 🚀 Performance
+### 📁 **Loyiha Strukturasi**
+```
+src/
+├── components/     # UI komponentlari
+├── screens/        # Ekranlar
+├── navigation/     # Navigation
+├── services/       # API xizmatlari
+├── store/          # Redux store
+├── utils/          # Yordamchi funksiyalar
+├── types/          # TypeScript tiplari
+└── assets/         # Rasmlar va fayllar
+```
 
-### Optimizatsiya
-- **Lazy Loading** - Komponentlarni kech yuklash
-- **Image Optimization** - Rasmlarni optimallashtirish
-- **Bundle Splitting** - Kod bo'limlarini ajratish
-- **Memory Management** - Xotira boshqaruvi
-
-### Monitoring
-- **Performance Metrics** - Ilova ishlash ko'rsatkichlari
-- **Error Tracking** - Xatoliklarni kuzatish
-- **Analytics** - Foydalanuvchi harakatlari
-
-## 🤝 Hissa qo'shish
-
-### Bug Report
-1. [Issues](https://github.com/DAMIR030303/BoshqaruvMobile2025/issues) bo'limida yangi issue yarating
-2. Xatolik haqida batafsil ma'lumot bering
-3. Screenshot yoki video qo'shing
-
-### Feature Request
-1. [Discussions](https://github.com/DAMIR030303/BoshqaruvMobile2025/discussions) bo'limida muhokama qiling
-2. Yangi xususiyat haqida batafsil ma'lumot bering
-3. Use case va foydalanish holatlarini tushuntiring
-
-### Pull Request
-1. Fork qiling
-2. Yangi branch yarating
-3. O'zgarishlarni amalga oshiring
-4. Test qiling
-5. Pull Request yarating
-
-## 📄 Litsenziya
-
-Bu loyiha [MIT License](LICENSE) ostida tarqatiladi.
-
-## 👥 Jamoa
-
-- **Developer**: [DAMIR030303](https://github.com/DAMIR030303)
-- **Project**: BoshqaruvMobile 2025
-- **Version**: 1.0.0
-
-## 📞 Aloqa
-
-- **GitHub**: [@DAMIR030303](https://github.com/DAMIR030303)
-- **Project**: [BoshqaruvMobile2025](https://github.com/DAMIR030303/BoshqaruvMobile2025)
-
-## 🙏 Minnatdorchilik
-
-- [React Native](https://reactnative.dev/) - Mobil ilova framework
-- [Expo](https://expo.dev/) - Development platform
-- [React Navigation](https://reactnavigation.org/) - Navigatsiya
-- [Redux Toolkit](https://redux-toolkit.js.org/) - State management
-- [React Query](https://tanstack.com/query) - Data fetching
+### 🧪 **Testing**
+- **Jest** - Unit testing
+- **React Native Testing Library** - Component testing
+- **Coverage Reports** - Test coverage
 
 ---
 
-⭐ **Agar loyiha sizga foydali bo'lsa, yulduzcha qo'yishni unutmang!**
+## 📱 Mobil Ilova Ishlatish
+
+### 🚀 **Tezkor Boshlash**
+
+1. **Expo Go ilovasini yuklab oling:**
+   - [Android](https://play.google.com/store/apps/details?id=host.exp.exponent)
+   - [iOS](https://apps.apple.com/app/expo-go/id982107779)
+
+2. **Loyihani ishga tushiring:**
+   ```bash
+   npm start
+   ```
+
+3. **QR kodni skanerlang:**
+   - Android: Expo Go ilovasi bilan
+   - iOS: Kamera ilovasi bilan
+
+4. **Ilova telefonda ochiladi!**
+
+### 📱 **Platforma Qo'llab-quvvatlash**
+
+| Platforma | Versiya | Status |
+|-----------|---------|---------|
+| Android   | 5.0+    | ✅ To'liq |
+| iOS       | 12.0+   | ✅ To'liq |
+| Web       | Modern  | ✅ To'liq |
+
+### 🔧 **Qurilma Ruxsatlari**
+
+| Ruxsat | Android | iOS | Maqsad |
+|--------|---------|-----|---------|
+| Kamera | ✅ | ✅ | Rasmlar olish |
+| Galereya | ✅ | ✅ | Rasmlar tanlash |
+| Joylashuv | ✅ | ✅ | Xarita xizmatlari |
+| Internet | ✅ | ✅ | API so'rovlari |
+| Bildirishnomalar | ✅ | ✅ | Push xabarlar |
+
+---
+
+## 🎉 Natija
+
+**BoshqaruvMobile** - bu zamonaviy, sifatli va ishonchli mobil ilova bo'lib, barcha boshqaruv ehtiyojlarini qondiradi. Ilova Android, iOS va Web platformalarida to'liq ishlaydi va foydalanuvchilarga qulay interfeys taqdim etadi.
+
+**Xususiyatlar:**
+- 🚀 **Tezkor ishlash** - Optimallashtirilgan performance
+- 🎨 **Zamonaviy dizayn** - Material Design 3
+- 🔒 **Xavfsizlik** - JWT token va encryption
+- 📱 **Responsive** - Barcha qurilmalarga moslashish
+- 🐛 **Xato yo'q** - To'liq testing va monitoring
+- 📊 **Analytics** - Foydalanuvchi harakatlari
+- 🔔 **Bildirishnomalar** - Real-time xabarlar
+
+**Endi sizning mobil ilovangiz tayyor va telefonda ishlaydi!** 🎉
+
+---
+
+**Muallif:** Damir Nurmurodov  
+**Loyiha:** BoshqaruvMobile  
+**Versiya:** 1.0.0  
+**Yil:** 2025
