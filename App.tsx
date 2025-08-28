@@ -13,6 +13,7 @@ import { SafeAreaView } from 'react-native'
 import { Provider } from 'react-redux'
 
 import { store } from './src/app/store'
+import { ErrorBoundary } from './src/components'
 import CallCenterNavigator from './src/navigation/CallCenterNavigator'
 import DesignSystemNavigator from './src/navigation/DesignSystemNavigator'
 import DirectorNavigator from './src/navigation/DirectorNavigator'
@@ -27,26 +28,28 @@ const Stack = createStackNavigator()
 
 export default function App() {
   return (
-    <Provider store={store}>
-      <NavigationContainer>
-        <SafeAreaView style={styles.container}>
-          <Stack.Navigator 
-            initialRouteName="Auth"
-            screenOptions={{ headerShown: false }}
-          >
-            <Stack.Screen name="Auth" component={LoginScreen} />
-            <Stack.Screen name="Main" component={MainTabNavigator} />
-            <Stack.Screen name="SuperAdmin" component={SuperAdminNavigator} />
-            <Stack.Screen name="Director" component={DirectorNavigator} />
-            <Stack.Screen name="CallCenter" component={CallCenterNavigator} />
-            <Stack.Screen name="HR" component={HRNavigator} />
-            <Stack.Screen name="Marketing" component={MarketingNavigator} />
-            <Stack.Screen name="ProjectManager" component={ProjectManagerNavigator} />
-            <Stack.Screen name="DesignSystem" component={DesignSystemNavigator} />
-          </Stack.Navigator>
-        </SafeAreaView>
-      </NavigationContainer>
-    </Provider>
+    <ErrorBoundary>
+      <Provider store={store}>
+        <NavigationContainer>
+          <SafeAreaView style={styles.container}>
+            <Stack.Navigator 
+              initialRouteName="Auth"
+              screenOptions={{ headerShown: false }}
+            >
+              <Stack.Screen name="Auth" component={LoginScreen} />
+              <Stack.Screen name="Main" component={MainTabNavigator} />
+              <Stack.Screen name="SuperAdmin" component={SuperAdminNavigator} />
+              <Stack.Screen name="Director" component={DirectorNavigator} />
+              <Stack.Screen name="CallCenter" component={CallCenterNavigator} />
+              <Stack.Screen name="HR" component={HRNavigator} />
+              <Stack.Screen name="Marketing" component={MarketingNavigator} />
+              <Stack.Screen name="ProjectManager" component={ProjectManagerNavigator} />
+              <Stack.Screen name="DesignSystem" component={DesignSystemNavigator} />
+            </Stack.Navigator>
+          </SafeAreaView>
+        </NavigationContainer>
+      </Provider>
+    </ErrorBoundary>
   )
 }
 

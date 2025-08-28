@@ -11,3 +11,8 @@ ios/build/
 .idea/
 .vscode/
 *.log
+
+# Log tizimi fayllari
+logs/
+*.log
+*.json.log

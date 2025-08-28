@@ -20,6 +20,11 @@ export { default as Card } from './Card';
 export { default as LoadingSpinner } from './LoadingSpinner';
 export { default as ErrorState } from './ErrorState';
 
+// Log tizimi komponentlari
+export { default as ErrorBoundary } from './ErrorBoundary';
+export { default as PerformanceMonitor } from './PerformanceMonitor';
+export { default as LogViewer } from './LogViewer';
+
 // Komponent tiplari
 export type { ButtonProps } from './Button';
 export type { InputProps } from './Input';
