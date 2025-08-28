@@ -12,12 +12,12 @@ import { colors, spacing, typography } from '../../theme';
 
 const DashboardScreen = () => {
   const user = useAppSelector(state => state.auth.user);
-  const { isWeb, isDesktop, isMobile } = useResponsive();
+  const { isWeb, isDesktop } = useResponsive();
   
   // Responsive values
-  const kpiColumns = useResponsiveColumns({ mobile: 1, tablet: 2, desktop: 3 });
-  const actionColumns = useResponsiveColumns({ mobile: 2, tablet: 3, desktop: 4 });
-  const containerPadding = useResponsiveValue({
+  const _kpiColumns = useResponsiveColumns({ mobile: 1, tablet: 2, desktop: 3 });
+  const _actionColumns = useResponsiveColumns({ mobile: 2, tablet: 3, desktop: 4 });
+  const _containerPadding = useResponsiveValue({
     mobile: spacing.lg,
     tablet: spacing.xl,
     desktop: spacing['2xl'],
