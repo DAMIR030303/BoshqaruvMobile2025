@@ -1,0 +1,22 @@
+// Boshqaruv - Components Export Index
+// Barcha komponentlarni markaziy joydan export qilish
+
+export { ResponsiveContainer } from './ResponsiveContainer';
+export { ResponsiveGrid, GridItem } from './ResponsiveGrid';
+export { default as ResponsiveHeader } from './ResponsiveHeader';
+export { default as ResponsiveNavigation } from './ResponsiveNavigation';
+export { WebLayout } from './WebLayout';
+
+// Yangi yaratilgan komponentlar
+export { default as Button } from './Button';
+export { default as Input } from './Input';
+export { default as Card } from './Card';
+export { default as LoadingSpinner } from './LoadingSpinner';
+export { default as ErrorState } from './ErrorState';
+
+// Komponent tiplari
+export type { ButtonProps } from './Button';
+export type { InputProps } from './Input';
+export type { CardProps } from './Card';
+export type { LoadingSpinnerProps } from './LoadingSpinner';
+export type { ErrorStateProps } from './ErrorState';
